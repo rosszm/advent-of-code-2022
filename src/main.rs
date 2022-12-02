@@ -17,11 +17,17 @@ enum Days {
         /// The path to the input file
         path: String
     },
+    /// Day 2: Rock Paper Scissors
+    D2 {
+        /// The path to the input file
+        path: String
+    },
 }
 impl Days {
     fn run(&self) {
         match self {
             Days::D1 { path } => aoc2022::d1::main(path),
+            Days::D2 { path } => aoc2022::d2::main(path),
         }
     }
 }
