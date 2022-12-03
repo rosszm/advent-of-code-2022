@@ -22,7 +22,7 @@ enum Days {
         /// The path to the input file
         path: String
     },
-    /// Day 3: Rucksask Reorganization
+    /// Day 3: Rucksack Reorganization
     D3 {
         /// The path to the input file
         path: String

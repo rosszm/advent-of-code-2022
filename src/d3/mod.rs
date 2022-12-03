@@ -18,7 +18,7 @@ fn priority(alpha: char) -> u8 {
     }
 }
 
-/// Part 1: returns the priority sum of item that appear in both compartments of a rucksask.
+/// Part 1: returns the priority sum of item that appear in both compartments of a rucksack.
 fn sum_items_in_both(file: File) -> u32 {
     let reader = BufReader::new(file);
     let input = reader.lines().map_while(|res| res.ok());
