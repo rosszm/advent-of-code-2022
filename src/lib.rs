@@ -4,3 +4,5 @@ pub mod d1;
 pub mod d2;
 /// Day 3: Rucksack Reorganization
 pub mod d3;
+/// Day 4: Camp Cleanup
+pub mod d4;
