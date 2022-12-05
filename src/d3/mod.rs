@@ -6,7 +6,7 @@ const UPPER_START: u8 = 65;
 const LOWER_START: u8 = 97;
 
 /// Returns the priority of the character.
-/// 
+///
 /// * `alpha` - an ASCII alphabetic character. (A-Z, a-z)
 fn priority(alpha: char) -> u8 {
     let number = alpha as u8;
@@ -35,11 +35,11 @@ fn sum_items_in_both(file: File) -> u32 {
                         sum += priority(c1) as u32;
                         in_both.push(c1);
                         break 'search;
-                    } 
+                    }
                 }
             }
             total += sum;
-        }  
+        }
     }
     total
 }
@@ -73,7 +73,7 @@ pub fn main(path: &String) {
     };
     match File::open(path) {
         Ok(file) => {
-            let part_1 = sum_group_badges(file);  
+            let part_1 = sum_group_badges(file);
             println!("part 2: {}", part_1);
         },
         Err(err) => eprintln!("error: Could not read file: {}", err),

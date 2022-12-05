@@ -2,8 +2,8 @@ use std::{fs::File, io::{self, BufReader, BufRead}, num::ParseIntError, ops::Ran
 
 
 /// The section range structure.
-/// 
-/// This structure represents an inclusive range   
+///
+/// This structure represents an inclusive range
 struct SectionRange {
     start: u8,
     end: u8,
@@ -49,7 +49,7 @@ impl TryFrom<&str> for SectionRange {
 
 /// Returns the number of pairs where the assigned sections of one elf fully contains the
 /// other.
-/// 
+///
 /// * `path` the path of an input file.
 fn fully_contained_count(path: &String) -> io::Result<(u16, u16)> {
     let file = File::open(path)?;
