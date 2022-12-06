@@ -8,3 +8,6 @@ pub mod d3;
 pub mod d4;
 /// Day 5: Supply Stacks
 pub mod d5;
+
+// Day 6: Tuning Trouble
+pub mod d6;
