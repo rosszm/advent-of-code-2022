@@ -8,6 +8,7 @@ pub mod d3;
 pub mod d4;
 /// Day 5: Supply Stacks
 pub mod d5;
-
-// Day 6: Tuning Trouble
+/// Day 6: Tuning Trouble
 pub mod d6;
+/// Day 7: No Space Left On Device
+pub mod d7;

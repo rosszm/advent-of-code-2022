@@ -42,6 +42,11 @@ enum Days {
         /// The path to the input file
         path: String
     },
+    /// Day 7: No Space Left On Device
+    D7 {
+        /// The path to the input file
+        path: String
+    },
 }
 impl Days {
     fn run(&self) {
@@ -52,6 +57,7 @@ impl Days {
             Days::D4 { path } => aoc2022::d4::main(path),
             Days::D5 { path } => aoc2022::d5::main(path),
             Days::D6 { path } => aoc2022::d6::main(path),
+            Days::D7 { path } => aoc2022::d7::main(path),
         }
     }
 }
